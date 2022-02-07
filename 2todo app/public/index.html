@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="stylesheet.css">
+	<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+         const firebaseConfig = {
+  apiKey: "AIzaSyDOVpnJVgkyKo3Vyghqsf8uYo4C7ik0MIc",
+  authDomain: "todo-javascript-pk.firebaseapp.com",
+  databaseURL: "https://todo-javascript-pk-default-rtdb.firebaseio.com",
+  projectId: "todo-javascript-pk",
+  storageBucket: "todo-javascript-pk.appspot.com",
+  messagingSenderId: "670967481933",
+  appId: "1:670967481933:web:832824efb2cc1f0caffe04",
+  measurementId: "G-GZ0KNSV7B8"
+};
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+	
+	
+	
+	
+	
+	
+</head>
+<body>
+     <div class="header">
+		 <h2>My To Do List</h2>
+		 <div class="inner_div">
+         <input placeholder="Enter Message" type="text" id="todo_item">
+         <button class="btns" onclick="addTodo()" >Add ToDo</button>
+         <button class="btns" onclick="delAll()" >Delete All</button> 
+     
+     <div>
+         <ul id="list" class="liStyle" ></ul>
+     </div> 
+			 </div>
+		 </div>
+        <script src="app.js"  ></script>
+	
+</body>
+</html>
+
